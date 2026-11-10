@@ -1,0 +1,3 @@
+/* Обычный CSS рядом с Tailwind: правило из двух классов («Set by a CSS rule»). Из step39 index.css. */
+.plain-rule { padding: 18px; border-radius: 6px; background-color: rgb(237, 233, 254); }
+.plain-rule.boost { padding: 22px; }

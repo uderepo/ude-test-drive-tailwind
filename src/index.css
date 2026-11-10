@@ -1,2 +1,18 @@
+@import "tailwindcss";
+
 * { box-sizing: border-box; }
 body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+
+/* Короткие имена Tailwind поверх токенов проекта (tokens.css): text-primary, bg-surface, p-md… */
+@theme inline {
+  --color-primary: var(--sys-primary);
+  --color-on-primary: var(--sys-on-primary);
+  --color-surface: var(--sys-surface);
+  --color-on-surface: var(--sys-on-surface);
+  --spacing-md: 16px;
+}
+
+/* Не токен: имени нет в tokens.css и в правилах коллекций. */
+:root {
+  --legacy-ink: rgb(146, 64, 14);
+}
